@@ -1,5 +1,7 @@
+/* eslint-disable func-names */
+/* eslint-disable no-alert */
+/* eslint-disable import/no-cycle */
 /* eslint-disable import/prefer-default-export */
-/* eslint-disable no-console */
 /* eslint-disable no-loop-func */
 /* eslint-disable no-plusplus */
 /* eslint-disable no-constructor-return */
@@ -47,8 +49,6 @@ export function moveKnight(start = [], target = []) {
 
     currentNode = q.shift();
   }
-
-  console.log(`You have made it in ${currentNode.path.length - 1} moves. Your moves are:`);
 
   for (let i = 0; i < currentNode.path.length; i++) {
     (function (index) {

@@ -1,4 +1,6 @@
-/* eslint-disable no-console */
+/* eslint-disable no-alert */
+/* eslint-disable no-use-before-define */
+/* eslint-disable import/no-cycle */
 /* eslint-disable no-plusplus */
 
 import { moveKnight } from './travails';
@@ -80,9 +82,8 @@ function createDom() {
     knightPlace.disabled = false;
     data = [];
     screen.textContent = '';
-    const image = document.querySelector(".knight-figure");
+    const image = document.querySelector('.knight-figure');
     document.querySelector('.game-board').removeChild(image);
-
   });
 
   buttonMove.addEventListener('click', () => {
@@ -101,17 +102,15 @@ function createDom() {
         isChoosingStart = false;
         knightPlace.disabled = false;
         const numClass = classes[1];
-        img.classList.add("knight-figure");
+        img.classList.add('knight-figure');
         document.querySelector('.game-board').appendChild(img);
         const numsOnly = numClass.split('-');
         const rowNum = numsOnly[1] - 1;
         const colNum = numsOnly[2] - 1;
         const fullLocation = [colNum, rowNum];
-        console.log(fullLocation);
         moveFigure(fullLocation);
         data.shift();
         data.unshift(fullLocation);
-        console.log(data);
       }
     } else if (isChoosingEnd) {
       const clickedElement = e.target;
@@ -133,7 +132,6 @@ function createDom() {
           return;
         }
         data.push(fullLocation);
-        console.log(data);
       }
     }
   });
