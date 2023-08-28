@@ -1,0 +1,213 @@
+@media only screen and (min-width: 1350px) {
+    .game-board-cover {
+        width: 700px;
+        height: 700px;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .game-board-cover {
+        width: 400px;
+        height: 400px;
+        grid-template-rows: 30px auto 30px;
+        box-shadow: -20px 20px 20px rgba(0, 0, 0, .5);
+        transition: 1s;
+        margin-left: 0;
+        grid-column-start: 1;
+    }
+
+    .middle {
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 30px auto 30px;
+        display: grid;
+    }
+
+    .numbers p, .letters p {
+        font-size: 0.7rem;
+    }
+
+    .letters {
+        padding: 0 35px;
+    }
+
+    .middle img {
+        width: 18px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .game-board-cover {
+        width: 300px;
+        height: 300px;
+        grid-template-rows: 20px auto 20px;
+    }
+
+    .middle {
+        grid-template-columns: 20px auto 20px;
+    }
+
+    .numbers p, .letters p {
+        font-size: 0.7rem;
+    }
+
+    .letters {
+        padding: 0 35px;
+    }
+
+    .middle img {
+        width: 18px;
+    }
+
+    .timer {
+        width: 300px;
+        height: 150px;
+        padding: 15px;
+        grid-template-rows: 40px 30px auto;
+        gap: 13px;
+    }
+
+    .timer-buttons {
+        height: 25px;
+        border-radius: 0 0 10px 10px;
+        gap: 2px;
+    }
+    
+    .timer-buttons button {
+        font-size: 0.45rem; 
+        margin-top: 0;
+    }
+    
+    .timer-buttons button:not([disabled]) {
+        font-size: 0.45rem;
+        margin-top: -1px;
+    }
+
+    .timer-logo i {
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    .holder {
+        top: 93%;
+    }
+    
+    .timer-logo img {
+        width: 60px;
+    }
+
+    .holder1 {
+        left: 40px;
+    }
+    
+    .holder2 {
+        right: 40px;
+    }
+    
+    .holder img {
+        width: 22px;
+    }
+
+    .wrapper {
+        gap: 3px;
+    }
+
+    .timer-screen h2 {
+        font-size: 1.8rem;
+    }
+
+    .middle img {
+        width: 12px;
+    }
+
+    .middle img {
+        width: 12px;
+        transform: translate(8px, -5px);
+    }
+
+    .timer-buttons button:first-child {
+        border-radius: 0 0 0 0;
+    }
+    
+    .timer-buttons button:last-child {
+        border-radius: 0 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .game-board-cover {
+        width: 240px;
+        height: 240px;
+        grid-template-rows: 10px auto 10px;
+    }
+
+    .timer {
+        width: 240px;
+        height: 120px;
+        padding: 15px;
+        grid-template-rows: 30px 20px auto;
+        gap: 13px;
+    }
+
+    .timer-button {
+        margin-bottom: 10px;
+    }
+
+    .timer-buttons button {
+        font-size: 0.4rem; 
+        margin-top: 0;
+    }
+    
+    .timer-buttons button:not([disabled]) {
+        font-size: 0.4rem;
+        margin-top: -1px;
+    }
+
+    .middle {
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 10px auto 10px;
+        display: grid;
+    }
+
+    .numbers p, .letters p {
+        font-size: 0.5rem;
+    }
+
+    .letters {
+        padding: 0 17px;
+    }
+
+    .numbers {
+        padding: 7px 0;
+    }
+
+    .middle img {
+        width: 12px;
+        transform: translate(7px, -2px);
+    }
+
+    .game-board {
+        border: 3px solid white;
+    }
+
+    .timer-screen h2 {
+        font-size: 1.2rem;
+    }
+
+    .holder1 {
+        left: 40px;
+    }
+    
+    .holder2 {
+        right: 40px;
+    }
+    
+    .holder img {
+        width: 16px;
+    }
+
+    .holder {
+        top: 91%;
+    }
+}

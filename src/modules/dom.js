@@ -83,7 +83,9 @@ function createDom() {
     data = [];
     screen.textContent = '';
     const image = document.querySelector('.knight-figure');
-    document.querySelector('.game-board').removeChild(image);
+    if (image) {
+      document.querySelector('.game-board').removeChild(image);
+    }
   });
 
   buttonMove.addEventListener('click', () => {
@@ -139,7 +141,9 @@ function createDom() {
 
 export function moveFigure(arr) {
   const middleImg = document.querySelector('.middle img');
-  const cellSize = 52;
+  const cell = document.querySelector('.cell');
+  const cellWidth = cell.offsetWidth;
+  const cellSize = cellWidth;
   middleImg.style.left = `${arr[0] * cellSize}px`;
   middleImg.style.bottom = `${arr[1] * cellSize}px`;
   const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
