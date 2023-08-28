@@ -64,7 +64,7 @@ table {
 }
 
 body {
-    background: url(images/grey-back.jpg);
+    background: black;
 }
 
 .timer-cover {
@@ -90,7 +90,6 @@ body {
     position: absolute;
     top: 96.5%;
     z-index: 1;
-    /* transform: translate(-50%, -50%); */
 }
 
 .holder1 {
@@ -191,12 +190,13 @@ body {
 
 .wrapper {
     padding: 30px;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: grid;
     grid-template-rows: min-content min-content;
     align-content: center;
     gap: 5px;
+    background: url(images/grey-back.jpg);
 }
 
 .playground {
@@ -216,26 +216,9 @@ body {
     grid-column-start: 1;
 }
 
-.game-board-normal {
-    width: 550px;
-    height: 550px;
-    transform: skew(0deg);
-    transition: 1s;
-    box-shadow: none;
-}
-
 .game-board > div {
     position: relative;
 }
-
-/* img {
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    width: 25px;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-} */
 
 .middle {
     height: 100%;
