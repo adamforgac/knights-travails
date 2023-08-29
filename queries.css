@@ -3,6 +3,11 @@
         width: 700px;
         height: 700px;
     }
+
+    .middle img {
+        width: 30px;
+        transform: translate(18px, -8px);
+    }
 }
 
 @media only screen and (max-width: 630px) {
